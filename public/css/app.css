@@ -12131,5 +12131,60 @@ body {
     height: 20%;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#footer {
+  border-top: 3px solid #00782e;
+  background-color: rgba(19, 81, 0, 0.5568627451);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+#footer .logo img {
+  width: 100px;
+  height: auto;
+}
+#footer .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+#footer .social-links a:hover {
+  color: #00782e;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    padding: 1rem;
+  }
+  #footer .logo img {
+    width: 80px;
+  }
+  #footer .social-links {
+    gap: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  #footer {
+    padding: 0.5rem;
+  }
+  #footer .logo img {
+    width: 60px;
+  }
+  #footer .social-links {
+    gap: 1rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
