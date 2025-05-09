@@ -14,7 +14,52 @@
 <!-- *-------------------- Body ------------------------ -->
 <body>
     <!-- *header section -->
-    <header id="header"></header>
+<header id="header">
+    <nav class="navbar">
+        <div class="logo"><img src="./public/img/logo/littleMama.png" alt="Little Mama Logo"></div>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">EVENTS</a>
+            <a href="#">SPECIALS</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CHEFS</a>
+            <a href="#">TEST</a>
+            <a href="#">CONTACT</a>
+            <li class="dropdown">
+                <a href="#">MENU</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Pizza</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Desserts</a></li>
+                </ul>
+            </li>
+        </div>
+        <button class="book-btn">Book a Table</button>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- **Modal** -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>Booking form or details go here.</p>
+            <h2>Enter your info</h2>
+            <label for="">Your Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label for="">Your Email</label>
+            <input type="email" placeholder="Enter your email" required>
+            <label for="">Your Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+            <input type="submit" value="Book Now" class="submit-btn">
+        
+        </div>
+    </div>
+</header>
     <!-- *-------------------------------------------- -->
     <!-- *Home section of website -->
     <section id="#"></section>
