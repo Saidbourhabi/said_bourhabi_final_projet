@@ -12137,6 +12137,161 @@ body {
   box-sizing: border-box;
 }
 
+#Contact {
+  border-top: 3px solid #00782e;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(19, 81, 0, 0.5568627451);
+}
+#Contact .contactContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+#Contact .contactContent .contactTittle {
+  text-align: center;
+}
+#Contact .contactContent .contactTittle p {
+  color: #fff;
+}
+#Contact .contactContent .contactTittle span {
+  font-size: 2rem;
+  color: #00782e;
+  font-weight: bolder;
+}
+#Contact .contactContent .contactInfo {
+  width: 100%;
+  height: 70vh;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+#Contact .contactContent .contactInfo .leftInfo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#Contact .contactContent .contactInfo .leftInfo .InfoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+#Contact .contactContent .contactInfo .leftInfo .InfoItem i {
+  text-align: center;
+  background: #00782e;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 5px;
+}
+#Contact .contactContent .contactInfo .leftInfo .InfoItem .InfoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.1rem;
+}
+#Contact .contactContent .contactInfo .rightInfo {
+  width: 50%;
+  height: 100%;
+}
+#Contact .contactContent .contactInfo .rightInfo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+#Contact .contactContent .contactInfo .rightInfo form input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #00782e;
+  outline: none;
+}
+#Contact .contactContent .contactInfo .rightInfo form textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #00782e;
+  outline: none;
+}
+#Contact .contactContent .contactInfo .rightInfo form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #00782e;
+  color: #fff;
+  cursor: pointer;
+}
+#Contact .contactContent .contactInfo .rightInfo form button:hover {
+  background: rgba(19, 81, 0, 0.5568627451);
+}
+#Contact .contactContent .contactInfo .rightInfo form button:active {
+  background: #00782e;
+}
+#Contact .contactContent .contactInfo .rightInfo form button:focus {
+  background: #00782e;
+}
+
+@media (max-width: 768px) {
+  #Contact {
+    height: fit-content;
+  }
+  #Contact .contactContent .contactInfo {
+    height: fit-content;
+    flex-direction: column;
+  }
+  #Contact .contactContent .contactInfo .leftInfo {
+    width: 100%;
+    height: 50%;
+  }
+  #Contact .contactContent .contactInfo .rightInfo {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media (max-width: 480px) {
+  #Contact {
+    height: fit-content;
+  }
+  #Contact .contactContent .contactInfo {
+    height: fit-content;
+    flex-direction: column;
+  }
+  #Contact .contactContent .contactInfo .leftInfo {
+    width: 100%;
+    height: 50%;
+  }
+  #Contact .contactContent .contactInfo .rightInfo {
+    width: 100%;
+    height: 50%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 #footer {
   border-top: 3px solid #00782e;
   background-color: rgba(19, 81, 0, 0.5568627451);

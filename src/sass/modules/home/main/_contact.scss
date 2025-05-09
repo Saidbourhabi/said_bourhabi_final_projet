@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#Contact{
+    border-top: 3px solid #00782e;
+    width: 100%;
+    height: fit-content;
+    background-color: #1351008e;
+    .contactContent{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+        .contactTittle{
+            text-align: center;
+            p{
+                color: #fff;
+            }
+            span{
+                font-size: 2rem;
+                color: #00782e;
+                font-weight: bolder;
+            }
+        }
+        .contactInfo{
+            width: 100%;
+            height: 70vh;
+            background: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            .leftInfo{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1rem;
+                .InfoItem{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 1rem;
+                    width: 100%;
+                    padding: 1rem;
+                    i{
+                        text-align: center;
+                        background: #00782e;
+                        width: 50px;
+                        height: 50px;
+                        font-size: 2rem;
+                        color: #fff;
+                        border-radius: 5px;
+                    }
+                    .InfoText{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        gap: 0.1rem;
+                        
+                    }
+                }
+            }
+            .rightInfo{
+                width: 50%;
+                height: 100%;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                    padding: 1rem;
+                    input{
+                        width: 100%;
+                        padding: 0.5rem 1rem;
+                        border-radius: 5px;
+                        border: 2px solid #00782e;
+                        outline: none;
+                    }
+                    textarea{
+                        width: 100%;
+                        padding: 0.5rem 1rem;
+                        border-radius: 5px;
+                        border: 2px solid #00782e;
+                        outline: none;
+                    }
+                    button{
+                        width: 100%;
+                        padding: 0.5rem 1rem;
+                        border-radius: 5px;
+                        border: none;
+                        outline: none;
+                        background: #00782e;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background: #1351008e;
+                    }
+                    button:active{
+                        background: #00782e;
+                    }
+                    button:focus{
+                        background: #00782e;
+                    }
+                }
+            }
+            }
+    }
+}
+
+@media (max-width: 768px) {
+    #Contact{
+        height: fit-content;
+        .contactContent{
+            .contactInfo{
+                height: fit-content;
+                flex-direction: column;
+                .leftInfo{
+                    width: 100%;
+                    height: 50%;
+                }
+                .rightInfo{
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    #Contact{
+        height: fit-content;
+        .contactContent{
+            .contactInfo{
+                height: fit-content;
+                flex-direction: column;
+                .leftInfo{
+                    width: 100%;
+                    height: 50%;
+                }
+                .rightInfo{
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
